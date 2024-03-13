@@ -11,7 +11,7 @@ def nii_to_jpg(input_folder, slice_index=None):
     filename_images = os.listdir(input_folder)
     for nii_file in zip(filename_images):
         
-        print('Image ' + nii_file[0] + ' in processing...')
+        print('Image ' + nii_file[0] + ' inProgress...')
         nii_file = os.path.join(input_folder, nii_file[0])
 
         # Decompress NIfTI file to a temporary location
